@@ -1,13 +1,23 @@
 function biggerButtonOnClick()
 {
-    document.getElementById("textArea").style.fontSize = "24pt"
+    document.getElementById("textArea").style.fontSize = "24pt";
 }
 
 function radioButton()
 {
     let isCheckFancyShmancy = document.getElementById("fancyShmancy").checked
     if(isCheckFancyShmancy)
-        document.getElementById("textArea").style.fontWeight = "bold"
+    {
+        const textArea = document.getElementById("textArea")
+        textArea.style.fontWeight = "bold";
+        textArea.style.color = "blue";
+        textArea.style.textDecoration = "underline";
+    } 
     else
-        document.getElementById("textArea").style.fontWeight = "normal"
+    {
+        const textArea = document.getElementById("textArea")
+        textArea.style.fontWeight = "normal";
+        textArea.style.color = "black";
+        textArea.style.textDecoration = "none";
+    }     
 }
