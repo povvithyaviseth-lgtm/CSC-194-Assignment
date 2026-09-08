@@ -1,4 +1,4 @@
 function biggerButtonOnClick()
 {
-    alert("Hello, World!")
+    document.getElementById("textArea").style.fontSize = "24pt"
 }
