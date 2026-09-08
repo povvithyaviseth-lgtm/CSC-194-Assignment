@@ -1,1 +1,4 @@
-alert("Hello, World!")
+function biggerButtonOnClick()
+{
+    alert("Hello, World!")
+}
